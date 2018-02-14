@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518646815027.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1442910954",
+    "id" : "B7F28B53",
+    "lastKnownWriteTime" : 1518651521,
+    "last_content_update" : 1518651521903,
+    "path" : "~/GitHub/pa3/pa3/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "60,122",
+        "last_setup_crc32" : "811EF751bb338d19",
+        "scrollLine" : "49",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

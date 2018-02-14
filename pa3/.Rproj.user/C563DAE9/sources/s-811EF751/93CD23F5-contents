@@ -1,0 +1,12 @@
+View(heid)
+View(ratings)
+View(my_data)
+
+
+my_data <- ratings %>%
+  select(., Word, Frequency, Familiarity = meanFamiliarity)
+View(my_data)
+library(tidyverse)
+my_data
+
+mean(my_data[, 'Frequency'])

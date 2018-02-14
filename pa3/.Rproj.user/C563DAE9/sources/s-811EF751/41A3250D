@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518646987015.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "41A3250D",
+    "lastKnownWriteTime" : 1518646985,
+    "last_content_update" : 1518646985,
+    "path" : "C:/Users/Nate/Downloads/test.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "31,2",
+        "scrollLine" : "23"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
