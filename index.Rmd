@@ -1,61 +1,66 @@
 ---
-title: "PA3"
-author: "Nate Koser"
-date: "Last Updated: `r Sys.Date()`"
+title: "Nate Koser "
+#author: "Nate Koser"
+#date: "Last Updated: `r Sys.Date()`"
 output: 
   html_document: 
+    includes:
+      in_header: "favicon.html"
     highlight: espresso
-    theme: cerulean
+    theme: journal 
     toc: yes
+    #toc_float: true
+#header-includes:
+#  - \usepackage{tipa}
+
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-```{r my_setup, echo=FALSE, message=FALSE}
-library(tidyverse)
-library(languageR)
-```
-### Tidy Data Set
+<style>
+    body .main-container {
+        max-width: 700px;
+    }
+</style>
 
-Here I select a few relevant variables.
-```{r data, echo=TRUE, message=FALSE}
-my_data <- ratings %>%
-  select(., Word, Frequency, Familiarity = meanFamiliarity)
-```
+ <img align= "right",  src="pic.jpg", width=200px>
+ 
+Department of Linguistics, Rutgers University 
+<br>
+18 Seminary Place, New Brunswick NJ
+<br>
+nate.koser@rutgers.edu
+<br>
+[CV](files/CV.pdf)
 
-### Descriptive Statistics
 
-Here I calculate the mean frequency of all the words.
 
-```{r stats, echo=TRUE, message=FALSE}
-mean(my_data[, 'Frequency'])
-```
+### About me
 
-### The Model and The Plot
 
-Here I fit the model and plot the variables with a 
-regression line.
+Hello, I'm Nate - a linguistics PhD student at Rutgers University. I'm originally from Canton, NY. I received my undergraduate degree from SUNY Binghamton and spent 5 years in South Korea before entering the program here in New Jersey. I am interested in computational phonology. If you have any questions, you're always welcome to email me.
 
-```{r model, echo=TRUE, message=FALSE}
-my_fit <- lm(Frequency ~ Familiarity, 
-             data = my_data)
-summary(my_fit)
+### Papers
 
-ggplot(my_data, aes(x=Frequency, y=Familiarity))+
-  geom_point()+
-  geom_smooth(method = lm, se = FALSE)+
-  coord_cartesian(xlim = c(2.4, 7.3), ylim = c(1.5,6))+
-  labs(title = "Word Familiarity and Frequency")
-```
+<ul>
+<li> Koser, Nate and Adam Jardine (to appear). <i>The complexity of optimizing over strictly local constraints</i>. Proceedings of PLC 43. 
+<li> Koser, Nate, Chris Oakden and Adam Jardine (2019). <i>Tone association and output locality in non-linear structures.</i> Supplemental proceedings of AMP 2018. [pdf](files/amp2018proceed.pdf) 
+<li>Koser, Nate. <i>Acoustic correlates of creaky voice in Yoruba</i>. Ms., Rutgers University. [pdf](files/qp2.pdf)
+<li>Koser, Nate. <i>A constraint definition language and consequences for stress assignment.</i>. Ms., Rutgers University. [pdf](files/qp1.pdf)
+</ul>
 
-### Observations
+### Presentations
 
-We observe a positive relationship between word
-frequency and subjective word familiarity. This 
-makes sense intuitively - the more often a person 
-encounters a word, the more familiar they should be
-with it. \
-Familiarity bottoms out around 2, suggesting that
-the words presented were all known in some way to the subjects, or perhaps that subjects were unlikely to give a rating of zero.
+<ul>
+<li> Koser, Nate (2019). <i>Creaky voice in Yoruba.</i> RULing XIV. Rutgers University. [slides](files/ruling19.pdf)
+<li> Koser, Nate and Adam Jardine (2019). <i>The complexity of optimizing over strictly local constraints</i>. PLC 43. [slides](files/plcslides.pdf)
+<li> Koser, Nate and Adam Jardine (2018). <i>Strictly local patterns are closed under optimization.</i> NecPhon 2018. [slides](files/necphonslides.pdf)
+<li> Koser, Nate (2018). <i>A constraint definition language and consequences for stress assignment.</i> RULing XIII. Rutgers University. [slides](files/ruling18slides.pdf)
+<li> Koser, Nate, Chris Oakden and Adam Jardine (2018). <i>Tone association and output locality in non-linear structures.</i> AMP 2018. [abstract](files/amp2018.pdf) [poster](files/amp2018poster.pdf) 
+</ul>
+
+### Teaching
+
+<ul>
+<li>Fall '18 - Ling201: Intro to Linguistic Theory
+<li>Spring '19 - Ling201: Intro to Linguistic Theory
+</ul>
